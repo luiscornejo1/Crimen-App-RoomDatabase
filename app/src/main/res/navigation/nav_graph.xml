@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/crimenFragment">
+
+    <fragment
+        android:id="@+id/crimenFragment"
+        android:name="com.csmre.registrocriminal4.ui.theme.DetalleCrimenFragment"
+        android:label="CrimenFragment"
+        tools:layout="@layout/fragment_crimen" >
+        <action
+            android:id="@+id/action_crimenFragment_to_detalleCrimenFragment"
+            app:destination="@id/detalleCrimenFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detalleCrimenFragment"
+        android:name="com.csmre.registrocriminal4.ui.theme.DetalleCrimenFragment"
+        android:label="DetalleCrimenFragment"
+        tools:layout="@layout/fragment_detalle_crimen" />
+</navigation>
